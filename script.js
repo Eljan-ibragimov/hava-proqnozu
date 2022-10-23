@@ -84,6 +84,9 @@ function renderError(err){
   <div class = "alert">
   ${err.message}
   </div>`;
+  setTimeout(function(){
+    document.querySelector("#error").innerHTML = " ";
+  },3000)
   document.querySelector("#error").innerHTML = html;
 
 }
